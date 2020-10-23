@@ -1,33 +1,39 @@
 :root {
-    --main-color: #511f50;
-    --text-color: #a39ca3;
-    --light-background: #f7f2f8;
+    --main-color: hsl(300, 43%, 22%);
+    --text-color: hsl(303, 10%, 53%);
+    --light-background:  hsl(300, 24%, 96%);
 }
 
 body {
-    font-family: 'Poppins', sans-serif;
-    font-size: 1em;
-    padding: 2rem 1rem;
+    margin: 0px;
+    font-family: 'Spartan', sans-serif;
+    font-size: 1rem;
+    padding: 4em 2em;
+    background-color: hsl(0, 0%, 100%);
 }
 
 .title {
-    font-size: 2rem;
+    font-size: 1.7rem;
     color: var(--main-color);
-    margin: 0px;
-    margin-bottom: 1rem;
+    margin: 0rem 1.5rem 1rem;
+    line-height: 1;
     font-weight: 700;
     text-align: center;
 }
 
 .introduction {
     color: var(--text-color);
-    font-size: 1rem;
+    font-size: .8rem;
+    line-height: 1.7;
     text-align: center;
     margin: 0px;
     margin-bottom: 2rem;
     font-weight: 500;
 }
 
+.rating {
+    margin-bottom: 2rem;  
+}
 .rating__container {
     background-color: var(--light-background);
     border-radius: 0.5rem;
@@ -48,8 +54,8 @@ body {
     margin-right: 0px;
 }
 .rating__text {
-    font-weight: 500;
-    font-size: 1rem;
+    font-weight: 700;
+    font-size: .8rem;
     color: var(--main-color);
 }
 

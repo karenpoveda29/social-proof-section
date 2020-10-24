@@ -4,8 +4,6 @@
     --light-background:  hsl(300, 24%, 96%);
 }
 
-/* Mobile styles */
-
 body {
     margin: 0px;
     font-family: 'Spartan', sans-serif;
@@ -34,8 +32,9 @@ body {
 }
 
 .rating {
-    margin-bottom: 2rem;  
+    margin-bottom: 2rem;
 }
+
 .rating__container {
     background-color: var(--light-background);
     border-radius: 0.5rem;
@@ -48,6 +47,7 @@ body {
 
 .rating__stars {
     margin-bottom: 0.5rem;
+    line-height: 0px;
 }
 .rating__stars img {
     margin-right: 0.25rem;
@@ -62,8 +62,6 @@ body {
 }
 
 .testimony {
-    display: flex;
-    flex-wrap: wrap;
     margin-bottom: 2rem;
 }
 
@@ -120,3 +118,82 @@ body {
     font-weight: 500;
 }
 
+/* Styles for desktop */
+
+@media only screen and (min-width: 480px) {
+    
+    body {
+        padding: 7rem 8.5rem 1rem;
+        display: flex;
+        flex-wrap: wrap;
+    }
+    
+    .upper-section {
+        margin-bottom: 4rem;
+        width: 100%;
+        display: flex;
+        align-items: center;
+    }
+
+    .title-intro {
+        margin-right: 10rem;
+        max-width: 25rem;
+    }
+
+    .rating {
+        margin-bottom: 0%;
+    }
+
+    .title {
+        font-size: 2.5rem;
+        text-align: left;
+        padding-right: 4rem;
+        margin: 0px;
+        margin-bottom: 0.5rem;
+    }
+
+    .introduction {
+        text-align: left;
+        margin-bottom: 0%;
+    }
+
+    .rating__container {
+        padding-left: 2rem;
+        flex-direction: row;
+        justify-content: left;
+        align-items: flex-start;
+        width: 24rem;
+    }
+
+    .rating__container:nth-child(2) {
+        margin-left: 3rem;
+    }
+    
+    .rating__container:nth-child(3) {
+        margin-left: 6rem;
+    }
+
+    .rating__stars {
+        margin: 0px;
+        margin-right: 2rem;
+    }
+
+    .testimony {
+       display: flex;
+       margin-bottom: 1.5rem; 
+    }
+
+    .testimony__container {
+        height: 9rem;
+    }
+
+    .testimony__container:nth-child(2) {
+        margin-left: 1.5rem;
+        margin-top: 1rem;
+    }
+
+    .testimony__container:nth-child(3) {
+        margin-left: 1.5rem;
+        margin-top: 2rem;
+    }
+}
